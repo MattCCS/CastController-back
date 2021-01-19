@@ -1,0 +1,9 @@
+services:
+  flask:
+    image: mattccs-castcontroller-back
+    container_name: back
+    build: .
+    ports:
+      - "11001:11001"
+    environment:
+      CHROMECAST_IP: ${CHROMECAST_IP}
