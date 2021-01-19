@@ -7,8 +7,6 @@ RUN pip install -r requirements.txt
 
 ADD . /app
 
-#EXPOSE 11001
-
 ENV PYTHONPATH /app
 ENV FLASK_APP castcontroller/server.py
 ENV FLASK_ENV development
